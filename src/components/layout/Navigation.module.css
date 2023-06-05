@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+}
+
+.Link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 3px solid transparent;
+    transition: .3s ease-in-out;
+    border-bottom: 3px solid transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.3vw;
+    box-shadow: rgba(118, 118, 202, 1) 0px 1.5px 0px;
+}
+
+.Link:hover {
+    border-bottom: 3px solid rgb(118, 118, 202)
+}
+

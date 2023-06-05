@@ -1,0 +1,61 @@
+.gridMainContainer{
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+    padding-top: 0.2;
+}
+
+.gridItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 10vw;
+    height: 8vw;
+    border-radius: 30%;
+}
+
+.maskLogo {
+    display: flex;
+    justify-content: center;
+    border-radius: 25%;
+    padding: 6px;
+    transition: .3s ease-in-out;
+    box-shadow: rgba(118, 118, 202, 1) 0px 1.5px 0px;
+}
+
+.maskLogo:hover {
+    box-shadow: rgba(118, 118, 202, 1) 0px 3px 0px;
+}
+/* --------- */
+
+/* globe and languages */
+.globe{
+    position: absolute;
+    display: flex;
+    
+}
+
+.globeImage {
+    transition: .3s ease-in-out;
+}
+
+.globeImage:hover {
+    scale: 1.1;
+}
+
+.languagesContainer {
+    display: flex;
+    padding: 0.2vw;
+    border: 2px solid black;
+    border-radius: 7%;
+    height: 2vw;
+}
+
+.language {
+    width: 10vw;
+}
+/* ------------- */
+

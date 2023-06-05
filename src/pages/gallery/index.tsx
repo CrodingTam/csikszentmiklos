@@ -1,20 +1,18 @@
 import { GetStaticProps } from "next";
-import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-interface HomePageProps {
+import React from "react";
 
+interface GalleryPageProps {
+    
 }
 
-const HomePage: React.FC<HomePageProps> = (props) => {
-    
+const GalleryPage = () => {
     return (
-        <div>
-            <h1>HomePage</h1>
-        </div>
+        <h1>Gallery page</h1>
     )
 }
 
-export const getStaticProps:GetStaticProps<HomePageProps> = async ({locale}) => {
+export const getStaticProps:GetStaticProps<GalleryPageProps> = async ({locale}) => {
     return {
         props: {
             ...(await serverSideTranslations(locale as string, ["navigation"])),
@@ -23,4 +21,4 @@ export const getStaticProps:GetStaticProps<HomePageProps> = async ({locale}) => 
     }
 }
 
-export default HomePage;
+export default GalleryPage;

@@ -1,20 +1,18 @@
 import { GetStaticProps } from "next";
-import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-interface HomePageProps {
+import React from "react";
+
+interface ContactPageProps {
 
 }
 
-const HomePage: React.FC<HomePageProps> = (props) => {
-    
+const ContactPage = () => {
     return (
-        <div>
-            <h1>HomePage</h1>
-        </div>
+        <h1>Contact page</h1>
     )
 }
 
-export const getStaticProps:GetStaticProps<HomePageProps> = async ({locale}) => {
+export const getStaticProps:GetStaticProps<ContactPageProps> = async ({locale}) => {
     return {
         props: {
             ...(await serverSideTranslations(locale as string, ["navigation"])),
@@ -23,4 +21,4 @@ export const getStaticProps:GetStaticProps<HomePageProps> = async ({locale}) => 
     }
 }
 
-export default HomePage;
+export default ContactPage;
