@@ -33,7 +33,7 @@ const ContactForm = () => {
                     <div className={classes.control}>
                         <Image className={classes.icon} src={"/assets/message.png"} alt="user" width={20} height={20}/>
                         <label className={classes.textAreaControl} htmlFor="message">
-                            <textarea className={classes.textArea} name="message" id="message" cols={30} rows={5} required placeholder="Az ön üzenete..." />
+                            <textarea className={classes.textArea} name="message" id="message" cols={5} rows={5} required placeholder="Az ön üzenete..." />
                         </label>
                     </div>
                     <div>

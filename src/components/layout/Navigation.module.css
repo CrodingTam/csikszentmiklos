@@ -18,10 +18,10 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 800;
     font-size: 1.3vw;
-    box-shadow: rgba(118, 118, 202, 1) 0px 1.5px 0px;
+    box-shadow: rgba(160, 50, 50, 1) 0px 1.5px 0px;
 }
 
 .Link:hover {
-    border-bottom: 3px solid rgb(118, 118, 202)
+    border-bottom: 3px solid rgb(160, 50, 50)
 }
 
