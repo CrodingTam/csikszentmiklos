@@ -21,7 +21,6 @@ export const getLanguages = () => {
         jancsika.push({name: folders[i]})
     }
 
-    
     return jancsika;
 }
 

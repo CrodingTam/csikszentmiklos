@@ -1,7 +1,6 @@
 .gridMainContainer{
     display: grid;
     grid-template-columns: 40% auto 40%;
-    padding-top: 0.2;
 }
 
 .gridItem{
@@ -35,27 +34,41 @@
 .globe{
     position: absolute;
     display: flex;
-    
+    align-items: center;
 }
 
 .globeImage {
+    width: 2.8vw;
+    height: 2.8vw;
     transition: .3s ease-in-out;
 }
 
 .globeImage:hover {
     scale: 1.1;
+    cursor: pointer;
 }
 
 .languagesContainer {
     display: flex;
     padding: 0.2vw;
-    border: 2px solid black;
     border-radius: 7%;
     height: 2vw;
 }
 
-.language {
-    width: 10vw;
+.flagContainer {
+    display: flex;
+    justify-content: center;
+    width: 3vw;
+}
+
+.flag {
+    width: 1.5vw;
+    height: 1.5vw;
+    transition: .3s ease-in-out;
+}
+
+.flag:hover {
+    scale: 1.2;
 }
 /* ------------- */
 
