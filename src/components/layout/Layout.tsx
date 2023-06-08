@@ -1,17 +1,20 @@
 import React, { Fragment } from "react";
 import MainNavigaton from "./MainNavigation";
+import Footer from "./Footer";
+import classes from "./Layout.module.css";
 
 interface LayoutProps {
-    children: string | JSX.Element | JSX.Element[];
+  children: string | JSX.Element | JSX.Element[];
 }
 
-const Layout: React.FC<LayoutProps> = ({children}) => {
-    return (
-        <Fragment>
-            <MainNavigaton />
-            {children}
-        </Fragment>
-    )
-}
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <div className={classes.mainContainer}>
+      <MainNavigaton />
+      <div className={classes.content}>{children}</div>
+      <Footer />
+    </div>
+  );
+};
 
 export default Layout;

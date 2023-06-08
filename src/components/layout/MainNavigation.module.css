@@ -1,6 +1,7 @@
 .gridMainContainer{
     display: grid;
     grid-template-columns: 40% auto 40%;
+    padding: 0.3%;
 }
 
 .gridItem{
@@ -13,9 +14,9 @@
 /* Logo */
 .logo {
     width: 14vw;
-    height: 10vw;
+    height: 12vw;
     transition: 0.3s ease-in-out;
-    padding-top: 15%;
+    padding-top: 22%;
 }
 
 .maskLogo {

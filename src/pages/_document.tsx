@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
-      <body style={{backgroundColor: "#FFFFFF"}}>
+      <body style={{backgroundColor: "#FFFFFF", margin: "0px"}}>
         <Main />
         <NextScript />
       </body>
