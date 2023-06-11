@@ -1,6 +1,133 @@
 .mainContainer {
     width: 100%;
-    background-color: green;
-    height: 80px;
-    color: white;
+    height: 16vw;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 0px -4px 10px rgba(160, 50, 50, 0.5);
+    display: grid;
+    grid-template-columns: 10% 30% 60%;
 }
+
+.commonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subCommonContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    margin-top: 1%;
+    font-size: 1.3vw;
+    color: rgba(160, 50, 50, 1);
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1vw;
+    gap: 15%;
+    color: rgba(160, 50, 50, 1);
+}
+
+.separatorContainer {
+    height: 70%;
+    border-right: 2px solid rgba(160, 50, 50, 0.5);
+}
+
+.mainLogo {
+    width: 10vw;
+    height: 9vw;
+}
+
+.reservationContainer {
+    display: flex;
+    flex-direction: column;
+    height: 76%;
+    padding-top: 2%;
+    justify-content: space-between;
+}
+
+.reservationInfoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-evenly;
+}
+
+.reservationInfo {
+    font-weight: 500;
+    font-size: 1.1vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+.subTitle {
+    font-weight: 600;
+    font-size: 1.15vw;
+}
+
+.teamsContainer {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    justify-content: space-around;
+    padding-top: 2%;
+    height: 64%;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 6vw;
+    height: 6vw;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(160, 50, 50, 0.5);
+    transition: 0.3s ease-in-out;
+    padding: 3%;
+}
+
+.butchersIcon {
+    width: 7vw;
+    height: 6vw;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 3%;
+    border-bottom: 2px solid rgba(160, 50, 50, 0.5);
+}
+
+.mediaIconsContainer {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    justify-content: center;
+}
+
+.mediaIcon {
+    width: 1.8vw;
+    height: 1.8vw;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.mediaIcon:hover {
+    scale: 1.1;
+}
+

@@ -20,11 +20,11 @@
 .info {
     display: flex;
     flex-direction: column;
-    gap: 30%;
+    gap: 10%;
     font-size: 0.8vw;
     font-family: 'Roboto Condensed', sans-serif;
     width: 60%;
-    height: 32%;
+    height: 40%;
     justify-content: flex-end;
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import classes from "./MainNavigation.module.css"
 import Image from "next/image";
 import { NavigationLinkProps } from "types";
@@ -9,7 +8,6 @@ import { useSelector } from "react-redux";
 import { RootState } from "store/store";
 
 const MainNavigaton = () => {
-    const router = useRouter();
     const navigationLinks = useSelector((state: RootState) => state.languages.navigationLinks);
 
 
