@@ -11,3 +11,21 @@ export type navigationLanguageLinks = {
     institutions: string,
     teams: string
 }
+
+export type contactLanguageProps = {
+    address:string,
+    availability:string,
+    contactability:string,
+    contactUs:string,
+    email:string,
+    message:string,
+    name:string,
+    postalCode:string,
+    telephoneNumber:string
+}
+
+export type contactDataProps = {
+    name: string,
+    email: string,
+    message: string
+}

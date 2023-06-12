@@ -2,12 +2,16 @@ import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "../../components/contact/ContactPage.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "store/store";
 
 interface ContactPageProps {}
 
 const ContactPage = () => {
+    const dispatch = useDispatch<AppDispatch>();
+    const currentLanguage = useSelector((state: RootState) =>  state.languages.language)
 
     return (
         <div className={classes.mainContainer}>

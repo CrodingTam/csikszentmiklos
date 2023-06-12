@@ -13,6 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <MainNavigaton />
       <div className={classes.content}>{children}</div>
       <Footer />
+      <div style={{display: "flex"}}></div>
     </div>
   );
 };

@@ -24,6 +24,23 @@
     height: 100%;
 }
 
+.replacerContainer {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+    flex-direction: column;
+}
+
+.clickSpan {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .controls {
     display: flex;
     flex-direction: column;
@@ -47,6 +64,11 @@
     padding: 5%;
 }
 
+.succesfulIcon {
+    width: 2.2vw;
+    height: 2.2vw;
+    padding: 5%;
+}
 
 
 .input {

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import classes from "../MainNavigation.module.css"
 import { useDispatch, useSelector } from "react-redux";
-import { setDisplayLanguages, setLanguage } from "store/slices/languagesSlice";
+import { setDisplayLanguages, setLanguage} from "store/slices/languagesSlice";
 import { AppDispatch, RootState } from "store/store";
 
 const LanguagesContainer = () => {
@@ -15,8 +15,7 @@ const LanguagesContainer = () => {
     const changeLanguage = (language: string) => {
         //set the language into selected language
         router.locale = language;
-        dispatch(setLanguage(language));
-        //dispatch(setDisplayLanguages(!displayLanguages));
+        dispatch(setLanguage(language))
         dispatch(setDisplayLanguages(!displayLanguages))
     }
 
