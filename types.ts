@@ -30,6 +30,16 @@ export type contactLanguageProps = {
     thanksMessage:string
 }
 
+export type footerLanguageProps = {
+    date: string,
+    firstAnswer: string,
+    firstQuestion: string,
+    reservation: string, 
+    secondAnswer: string,
+    secondQuestion: string,
+    volunteerTeams: string
+}
+
 export type contactDataProps = {
     name: string,
     email: string,

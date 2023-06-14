@@ -5,14 +5,18 @@ import navigationRO from "../../public/locales/ro/navigation.json";
 import contactEN from "../../public/locales/en/contact.json";
 import contactHU from "../../public/locales/hu/contact.json";
 import contactRO from "../../public/locales/ro/contact.json";
-import { contactLanguageProps, navigationLanguageLinks } from 'types';
+import footerEN from "../../public/locales/en/footer.json";
+import footerHU from "../../public/locales/hu/footer.json";
+import footerRO from "../../public/locales/ro/footer.json";
+import { contactLanguageProps, footerLanguageProps, navigationLanguageLinks } from 'types';
 
 
 export interface languagesState {
     navigationLinks: navigationLanguageLinks;
     language: string;
     displayLanguages: boolean;
-    contact: contactLanguageProps
+    contact: contactLanguageProps;
+    footer: footerLanguageProps;
 }
 
 const initialState: languagesState = {
@@ -42,6 +46,15 @@ const initialState: languagesState = {
         submit: contactHU.submit,
         succesfulMessage: contactHU.succesfulMessage,
         thanksMessage: contactHU.thanksMessage
+    },
+    footer: {
+        date: footerHU.date,
+        firstAnswer: footerHU.firstAnswer,
+        firstQuestion: footerHU.firstQuestion,
+        reservation: footerHU.reservation,
+        secondAnswer: footerHU.secondAnswer,
+        secondQuestion: footerHU.secondQuestion,
+        volunteerTeams: footerHU.volunteerTeams
     }
 }
 
@@ -59,16 +72,19 @@ export const languagesSlice = createSlice({
                     console.log("magyar")
                     state.contact = contactHU;
                     state.navigationLinks = navigationHU;
+                    state.footer = footerHU;
                     break;
                 case "en":
                     console.log("angol")
                     state.contact = contactEN;
                     state.navigationLinks = navigationEN;
+                    state.footer = footerEN;
                     break;
                 case "ro":
                     console.log("roman")
                     state.contact = contactRO;
                     state.navigationLinks = navigationRO;
+                    state.footer = footerRO;
                     break;
             }
         }
