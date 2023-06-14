@@ -24,7 +24,7 @@ const ContactInfo = () => {
                 </div>
                 <div className={classes.iconContainer}>
                     <Image className={classes.icon} src={"/assets/location.png"} alt="location" width={20} height={20}/>
-                    <span className={classes.iconNameSpan}>{content.address}: <span className={classes.contentSpan}>Románia, Csíkszentmiklós ...</span></span>
+                    <span className={classes.iconNameSpan}>{content.address}: <span className={classes.contentSpan}>{content.addressDetail}</span></span>
                 </div>
                 <div className={classes.iconContainer}>
                     <Image className={classes.icon} src={"/assets/phone-call.png"} alt="phone-call" width={20} height={20}/>

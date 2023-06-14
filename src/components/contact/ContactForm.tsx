@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import { RootState } from "store/store";
 import { sendContactData } from "@/lib/api";
 import { contactDataProps } from "types";
-import Link from "next/link";
 
 const ContactForm = () => {
     const emailInputRef = useRef<any>();
@@ -18,7 +17,7 @@ const ContactForm = () => {
         event.preventDefault();
         const contactData: contactDataProps = {
             email: emailInputRef.current.value,
-            name: nameInputRef.current.value ,
+            name: nameInputRef.current.value,
             message: messageInputRef.current.value
         }
 
@@ -32,10 +31,10 @@ const ContactForm = () => {
             </div>
             {contactIsAvailable ? (
                 <div className={classes.replacerContainer}>
-                    <p>Köszönjük, hogy időt szánt ránk!</p>
+                    <p>{content.thanksMessage}</p>
                     <Image className={classes.succesfulIcon} src={"/assets/succesful.png"} alt="succesful" width={20} height={20}/>
-                    <p>Az üzenet sikeresen elküldve!</p>
-                    <p>Ha szeretne még üzenetet írni, <span className={classes.clickSpan} onClick={() => setContactIsAvailable(false)}> kattintson ide! </span></p>
+                    <p>{content.succesfulMessage}</p>
+                    <p>{content.ifMessage}<span className={classes.clickSpan} onClick={() => setContactIsAvailable(false)}> {content.clickHere}</span></p>
                 </div>
             ) : (
                 <form className={classes.form} onSubmit={(event) => (sendMessageHandler(event))}>
@@ -48,7 +47,7 @@ const ContactForm = () => {
                         </div>
                         <div className={classes.control}>
                             <Image className={classes.icon} src={"/assets/user_mail.png"} alt="user" width={20} height={20}/>
-                            <label htmlFor="email">
+                            <label htmlFor="email" className={classes.label}>
                                 <input className={classes.input} type="email" id="email" required ref={emailInputRef} placeholder={`${content.email}...`}/>
                             </label>
                         </div>
@@ -58,7 +57,7 @@ const ContactForm = () => {
                                 <textarea className={classes.textArea} name="message" id="message" cols={5} rows={5} required placeholder={`${content.message}...`} ref={messageInputRef} />
                             </label>
                         </div>
-                        <div>
+                        <div className={classes.buttonContainer}>
                             <button className={classes.button}>
                                 <Image className={classes.icon} src={"/assets/send.png"} alt="user" width={20} height={20}/>
                             </button>
