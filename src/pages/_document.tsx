@@ -9,7 +9,7 @@ export default function Document() {
       <body style={{backgroundColor: "#FFFFFF", margin: "0px"}}>
         <Main />
         <NextScript />
-      </body>
+      </body> 
     </Html>
   )
 }
