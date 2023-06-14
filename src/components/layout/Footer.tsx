@@ -18,10 +18,10 @@ const Footer = () => {
 
             <div className={classes.commonContainer}>
                 <div className={classes.subCommonContainer}>
-                    <h2 className={classes.title}>Eseményekre Foglalás</h2>
+                    <h2 className={classes.title}>Foglalás</h2>
                     <div className={classes.reservationContainer}>
                         <div className={classes.reservationInfoContainer}>
-                            <span className={classes.subTitle}>Igényes és rendezvényekre alkalmas helyet keres?</span> 
+                            <span className={classes.subTitle}>Rendezvényekre alkalmas helyet keres?</span> 
                             <span className={classes.reservationInfo}>
                                 Nálunk megtalálja, kattintson ide:
                                 <Image className={classes.mediaIcon} alt="csie_logo" src={"/assets/home.png"} width={200} height={200} />

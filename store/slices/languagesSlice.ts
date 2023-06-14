@@ -35,7 +35,13 @@ const initialState: languagesState = {
         message: contactHU.message,
         name: contactHU.name,
         postalCode: contactHU.postalCode,
-        telephoneNumber: contactHU.telephoneNumber
+        telephoneNumber: contactHU.telephoneNumber,
+        addressDetail: contactHU.addressDetail,
+        clickHere: contactHU.clickHere,
+        ifMessage: contactHU.ifMessage,
+        submit: contactHU.submit,
+        succesfulMessage: contactHU.succesfulMessage,
+        thanksMessage: contactHU.thanksMessage
     }
 }
 

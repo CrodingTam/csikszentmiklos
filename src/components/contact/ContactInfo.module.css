@@ -6,6 +6,7 @@
     transition: .3s ease-in-out;
     border-radius: 1%;
     height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 0px 3px 0px;
 }
 
 .infoContainer:hover {
@@ -60,4 +61,34 @@
 .image {
     width: 30vw;
     height: 12.5vw;
+}
+
+@media only screen and (max-width: 880px) {
+    .infoContainer {
+        align-items: center;
+        height: 80vw;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        justify-content: space-between;
+    }
+    .titleContainer {
+        font-size: 10px;
+    }
+    .info {
+        width: 100%;
+        justify-content: center;
+    }
+    .iconContainer {
+        padding-left: 30%;
+    }
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    .iconNameSpan {
+        font-size: 10px;
+    }
+    .contentSpan {
+        font-size: 9px;
+    }
 }

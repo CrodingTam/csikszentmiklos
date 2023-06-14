@@ -27,7 +27,7 @@
     margin: 0;
     margin-top: 1%;
     font-size: 1.3vw;
-    color: rgba(160, 50, 50, 1);
+    color: rgba(135, 68, 30, 1);
 }
 
 .logoContainer {
@@ -38,12 +38,12 @@
     font-weight: 600;
     font-size: 1.1vw;
     gap: 15%;
-    color: rgba(160, 50, 50, 1);
+    color: rgba(135, 68, 30, 1);
 }
 
 .separatorContainer {
     height: 70%;
-    border-right: 2px solid rgba(160, 50, 50, 0.5);
+    border-right: 2px solid rgba(135, 68, 30, 1);
 }
 
 .mainLogo {
@@ -99,7 +99,7 @@
     width: 6vw;
     height: 6vw;
     cursor: pointer;
-    border-bottom: 2px solid rgba(160, 50, 50, 0.5);
+    border-bottom: 2px solid rgba(135, 68, 30, 1);
     transition: 0.3s ease-in-out;
     padding: 3%;
 }
@@ -110,7 +110,7 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     padding: 3%;
-    border-bottom: 2px solid rgba(160, 50, 50, 0.5);
+    border-bottom: 2px solid rgba(135, 68, 30, 1);
 }
 
 .mediaIconsContainer {

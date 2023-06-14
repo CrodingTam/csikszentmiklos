@@ -13,15 +13,21 @@ export type navigationLanguageLinks = {
 }
 
 export type contactLanguageProps = {
-    address:string,
-    availability:string,
-    contactability:string,
-    contactUs:string,
+    message: string
+    address: string,
+    addressDetail: string,
+    availability: string,
+    clickHere: string,
+    contactability: string,
+    contactUs: string,
     email:string,
-    message:string,
-    name:string,
-    postalCode:string,
-    telephoneNumber:string
+    ifMessage: string,
+    name: string,
+    postalCode: string,
+    submit: string,
+    succesfulMessage: string,
+    telephoneNumber: string,
+    thanksMessage:string
 }
 
 export type contactDataProps = {

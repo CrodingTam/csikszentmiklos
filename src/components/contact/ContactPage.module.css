@@ -15,7 +15,6 @@
     display: grid;
     grid-template-columns: 50% 50%;
     width: 80%;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     border-radius: 1%;
 }
 
@@ -31,4 +30,16 @@
     border: none;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     border-radius: 1%;
+}
+
+@media only screen and (max-width: 880px) {
+    .mainContainer {
+        padding-top: 80px;
+    }
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        padding: 10%;
+    }
 }
